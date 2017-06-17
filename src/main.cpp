@@ -84,7 +84,9 @@ int main(int argc, char** argv) {
                 return EXIT_SUCCESS;
         }
     }
-
+    wiringPiSetup();
+    pinMode(port, OUTPUT);
+    
     digitalWrite(port, HIGH);
     sleep(2);
     digitalWrite(port, LOW);
