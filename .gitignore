@@ -62,7 +62,7 @@ Makefile.in
 /.libs/libMoBaCommon.so.0
 /libtool
 /config.status
-/moba-environment
+/moba-shutdown
 /core
 /response.log
 /configure.scan
