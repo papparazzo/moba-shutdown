@@ -20,17 +20,19 @@
  *
  */
 
+#include <unistd.h>
 #include <cstdlib>
 #include <getopt.h>
 #include <config.h>
-#include <moba/helper.h>
+#include <iostream>
+#include <moba-common/helper.h>
 
 #include <wiringPi.h>
 
 namespace {
-    moba::AppData appData = {
+    moba::common::AppData appData = {
         PACKAGE_NAME,
-        moba::Version(PACKAGE_VERSION),
+        moba::common::Version{PACKAGE_VERSION},
         __DATE__,
         __TIME__,
         "",
@@ -80,7 +82,7 @@ int main(int argc, char** argv) {
                 return EXIT_SUCCESS;
 
             case 'v':
-                moba::printAppData(appData);
+                moba::common::printAppData(appData);
                 return EXIT_SUCCESS;
         }
     }
