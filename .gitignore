@@ -62,12 +62,12 @@ Makefile.in
 /.libs/libMoBaCommon.so.0
 /libtool
 /config.status
-/moba-shutdown
-/core
-/response.log
 /configure.scan
 /autoscan.log
+/response.log
+/moba-shutdown
 /src/.deps/
+/core
 
 # misc
 
