@@ -65,7 +65,7 @@ Makefile.in
 /configure.scan
 /autoscan.log
 /response.log
-/moba-shutdown
+/src/moba-shutdown
 /src/.deps/
 /core
 
