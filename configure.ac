@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT([moba-shutdown], [0.2.0-0000], [pappi-@gmx.de])
+AC_INIT([moba-shutdown], [2.0.0-0000], [pappi-@gmx.de])
 AC_CONFIG_SRCDIR([src])
 AC_CONFIG_HEADERS([config.h])
 

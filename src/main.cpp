@@ -1,7 +1,7 @@
 /*
  *  Project:    moba-shutdown
  *
- *  Version:    1.0.0
+ *  Version:    2.0.0
  *
  *  Copyright (C) 2016 Stefan Paproth <pappi-@gmx.de>
  *
@@ -30,9 +30,9 @@
 #include <wiringPi.h>
 
 namespace {
-    moba::common::AppData appData = {
+    moba::AppData appData = {
         PACKAGE_NAME,
-        moba::common::Version{PACKAGE_VERSION},
+        moba::Version{PACKAGE_VERSION},
         __DATE__,
         __TIME__,
         "",
@@ -82,13 +82,13 @@ int main(int argc, char** argv) {
                 return EXIT_SUCCESS;
 
             case 'v':
-                moba::common::printAppData(appData);
+                moba::printAppData(appData);
                 return EXIT_SUCCESS;
         }
     }
     wiringPiSetup();
     pinMode(port, OUTPUT);
-    
+
     digitalWrite(port, HIGH);
     sleep(2);
     digitalWrite(port, LOW);
