@@ -93,4 +93,5 @@ int main(int argc, char** argv) {
     sleep(2);
     digitalWrite(port, LOW);
     execl("/sbin/shutdown", "shutdown", "-h", "now", NULL);
+    return EXIT_SUCCESS;
 }
